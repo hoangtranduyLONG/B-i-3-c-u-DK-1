@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sta">
+<input type="text" id="stb">
+<button onclick="yyy()">Ấn</button>
+<button onclick="xxx()">Ấn 2</button>
+<button onclick="zzz()">Ấn 3</button>
+<h1 id="kq"></h1>
+<script>
+    let c = document.getElementById("sta")
+    let d = document.getElementById("stb")
+    let kq = document.getElementById("kq")
+
+    function yyy() {
+
+        let dienTich = c.value * c.value;
+        kq.innerHTML = " diện tích: " + dienTich;
+    }
+
+    function xxx() {
+        let a = c.value;
+        let b = d.value;
+        kq.innerHTML =   a * b
+    }
+
+    function zzz() {
+        let a = +c.value;
+        let b = +d.value;
+        kq.innerHTML = (a * b)/ 2 + " ";
+    }
+</script>
+</body>
+</html>
